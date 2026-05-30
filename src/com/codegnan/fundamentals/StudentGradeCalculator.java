@@ -8,7 +8,7 @@ public class StudentGradeCalculator {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter marks:");
 		int marks = sc.nextInt();
-		char grade = (marks>90) ? 'A' : (marks>80) ? 'B' : (marks>70) ? 'C' : (marks>60) ? 'D' : (marks>50) ? 'E' : 'F';
+		char grade = (marks>=90) ? 'A' : (marks>=80) ? 'B' : (marks>=70) ? 'C' : (marks>=60) ? 'D' : (marks>=50) ? 'E' : 'F';
 		System.out.println("Grade : "+ grade);
 		sc.close();
 	}
